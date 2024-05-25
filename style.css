@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #212020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-box{
+  background: white;
+  width: 450px;
+  height: 300px;
+  padding: 25px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.quote-box h1{
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.quote-box h1::after{
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: rgb(23, 124,224);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote{
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.quote-author{
+  width: 100%;
+  text-align: right;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.quote-author::first-letter{
+  font-size: 20px;
+  color: blue;
+  margin-right: 5px;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.new-quote{
+  padding: 14px 26px;
+  background: blue;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.new-quote:hover{
+  background: rgb(3, 3, 174);
+}
+.tweet-btn{
+  padding: 13px 30px;
+  background: white;
+  color: black;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: 14px;
+}
+.tweet-btn:hover{
+  background: rgb(234, 233, 233);
+}
+.tweet-btn i{
+  color: blue;
+  font-size: 16px;
+}
